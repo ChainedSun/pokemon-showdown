@@ -4956,6 +4956,17 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
+	{
+		// PPS wild-encounter format: singles, NO team preview (the player should
+		// not see/choose against the wild Pokémon up front), no validation. The
+		// server drives both sides via the sim bridge.
+		name: "[Gen 5] Wild",
+		mod: 'gen5',
+		searchShow: false,
+		debug: true,
+		battle: { trunc: Math.trunc },
+		ruleset: ['Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
+	},
 
 	// B2/W2 Doubles
 	///////////////////////////////////////////////////////////////////
