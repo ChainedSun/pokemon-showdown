@@ -4571,6 +4571,17 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
+	{
+		// PPS wild-encounter format: singles, NO team preview, no validation.
+		// PokeOne is a Gen 7 roster (through #802), so the bridge uses gen7.
+		// The server drives both sides via the sim bridge.
+		name: "[Gen 7] Wild",
+		mod: 'gen7',
+		searchShow: false,
+		debug: true,
+		battle: { trunc: Math.trunc },
+		ruleset: ['Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
+	},
 
 	// US/UM Doubles
 	///////////////////////////////////////////////////////////////////

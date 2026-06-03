@@ -1,0 +1,3 @@
+# Generated dex exports — large and regenerable.
+# Recreate with:  node _pps_export/export-dex.js [gen]   (default gen 7)
+*.json
